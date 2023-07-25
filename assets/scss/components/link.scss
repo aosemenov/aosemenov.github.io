@@ -1,0 +1,47 @@
+.link {
+    display: block;
+    padding: rem(8px) 0;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    color: $primary;
+
+    &--with-icon {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &--with-icon & {
+        &__icon {
+            margin-right: rem($gap-small);
+        }
+    }
+
+    &--small & {
+        &__text {
+            @include btn-s();
+        }
+    }
+
+    &:hover {
+        color: $primary;
+    }
+
+    &__text {
+        @include btn-l();
+
+        color: inherit;
+    }
+
+    &__icon {
+        $size: 18px;
+
+        display: block;
+
+        width: rem($size);
+        height: rem($size);
+
+        color: inherit;
+    }
+}

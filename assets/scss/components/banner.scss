@@ -1,0 +1,13 @@
+.banner {
+    &__inner {
+        position: relative;
+
+        width: rem(811px);
+        height: auto;
+        margin: rem(239px) 0 0 rem(40px);
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+}

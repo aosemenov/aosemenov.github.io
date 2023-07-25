@@ -1,0 +1,78 @@
+.button {
+    $root: &;
+
+    $size-large: 48px;
+    $size-medium: 42px;
+
+    @include btn-m();
+
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: rem(130px);
+    max-width: rem(380px);
+    height: rem($size-medium);
+    padding: 0 rem(24px);
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    cursor: pointer;
+    transition: color $transition-duration $transition-function,
+    background-color $transition-duration $transition-function;
+    text-decoration: none;
+
+    color: $aquaHaze;
+    background: $primary;
+    border: none;
+    border-radius: $border-radius-large;
+
+    @media #{$screen-tablet} {
+        @include btn-l();
+
+        height: rem($size-large);
+    }
+
+    &:disabled {
+        cursor: default;
+
+        color: $mischka;
+        background: $moonRaker;
+    }
+
+    &:disabled & {
+        &__icon {
+            display: none;
+        }
+    }
+
+    &__text {
+        @include text-ellipsis;
+
+        color: inherit;
+    }
+
+    &__icon {
+        $size: 20px;
+        $icon-margin: $gap-tiny;
+
+        flex-shrink: 0;
+
+        width: rem($size);
+        height: rem($size);
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--right {
+            order: 1;
+
+            margin-right: 0;
+            margin-left: rem($icon-margin);
+        }
+    }
+}

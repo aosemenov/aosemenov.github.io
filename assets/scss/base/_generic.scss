@@ -13,17 +13,23 @@ html {
     font-size: 100%;
 
     position: relative;
+    z-index: $z-index-html;
+
+    // Чинит flex-grow для body в IE11
+    display: flex;
+    flex-direction: column;
+
+    color: $color-text;
 }
 
 body {
     overflow-y: scroll;
     overflow-x: hidden;
 
-    text-rendering: optimizeLegibility;
+    height: 100%;
+    min-height: 100%;
 
-    &.fancybox-active {
-        overflow-y: hidden;
-    }
+    text-rendering: optimizeLegibility;
 }
 
 input {
@@ -41,4 +47,31 @@ input {
     &::-ms-clear {
         display: none;
     }
+}
+
+img {
+    display: block;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &:not([class]) {
+        margin-bottom: rem($gap-normal);
+
+        @include resetting-vertical-indentation-of-last;
+    }
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include list-reset;
 }

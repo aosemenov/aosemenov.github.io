@@ -6,6 +6,7 @@
 
  // Пример подключения плагина
  // import pluginName from 'plugin-name';
+import svg4everybody from 'svg4everybody';
 
  /**
   * Modules
@@ -18,6 +19,7 @@
     ready() {
         // Пример вызова импортированных функций
         // pluginName();
+        svg4everybody();
     },
 
     load() {

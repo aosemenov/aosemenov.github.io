@@ -1,0 +1,92 @@
+.auth-form {
+    &__logo {
+        margin-bottom: rem(50px);
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        margin-bottom: rem(70px);
+
+        @media #{$screen-tablet} {
+            margin-bottom: rem(50px);
+            padding-right: rem(120px);
+        }
+
+        &-title {
+            @include h-6();
+
+            display: inline-block;
+
+            margin-bottom: rem(20px);
+
+            color: $codGray;
+
+            @media #{$screen-tablet} {
+                @include h-5();
+            }
+        }
+
+        &-message {
+            @include txt-3();
+
+            display: inline-block;
+
+            color: $color-text;
+
+            @media #{$screen-tablet} {
+                @include txt-2();
+            }
+        }
+    }
+
+    &__form {
+        margin-bottom: rem(50px);
+
+        @media #{$screen-tablet} {
+            margin-bottom: rem(30px);
+        }
+    }
+
+    &__actions {
+        @include list-reset();
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__action {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        & + & {
+            margin-top: rem($gap-small);
+        }
+
+        &-label {
+            @include txt-4();
+
+            margin-right: rem(10px);
+
+            @media #{$screen-tablet} {
+                @include txt-2();
+            }
+        }
+
+        &-link {
+            @include btn-s();
+
+            padding: rem(10.5px) 0;
+
+            @media #{$screen-tablet} {
+                @include btn-l();
+
+                padding: rem(7.5px) 0;
+            }
+        }
+    }
+}

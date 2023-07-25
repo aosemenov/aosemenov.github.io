@@ -1,0 +1,12 @@
+.logo {
+    display: inline-block;
+    
+    padding: rem(4px);
+
+    &__icon {
+        width: rem(96px);
+        height: rem(28px);
+
+        color: $primary;
+    }
+}

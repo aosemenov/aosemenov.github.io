@@ -1,0 +1,38 @@
+.eye-toggle {
+    padding: 0;
+
+    cursor: pointer;
+    outline: none;
+
+    background: transparent;
+    border: none;
+
+    &._close & {
+        &__icon {
+            &--open {
+                display: none;
+            }
+
+            &--close {
+                display: block;
+            }
+        }
+    }
+
+    &__icon {
+        $size: 24px;
+
+        width: rem($size);
+        height: rem($size);
+
+        color: $eastBay;
+
+        &--open {
+            display: block;
+        }
+
+        &--close {
+            display: none;
+        }
+    }
+}
