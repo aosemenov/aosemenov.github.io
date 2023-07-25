@@ -1,0 +1,32 @@
+.lang-list {
+    @include list-reset();
+
+    display: flex;
+    flex-direction: column;
+
+    &__option {
+        display: flex;
+        align-items: center;
+
+        padding: rem(10px) rem(10px);
+
+        cursor: pointer;
+
+        background: $white;
+        border: none;
+
+        &--active {
+            background: $blueChalk;
+        }
+
+        &-preview {
+            margin-right: rem(10px);
+        }
+
+        &-text {
+            @include txt-4();
+
+            color: $codGray;
+        }
+    }
+}

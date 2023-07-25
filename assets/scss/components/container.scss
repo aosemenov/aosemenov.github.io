@@ -1,0 +1,20 @@
+.container {
+    $screen-mobile: "(min-width: 360px)";
+
+    width: 100%;
+    max-width: rem($width-container);
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: rem($gap-tiny);
+    padding-left: rem($gap-tiny);
+
+    @media #{$screen-mobile} {
+        padding-right: rem($gap-container);
+        padding-left: rem($gap-container);
+    }
+
+    @media #{$screen-tablet} {
+        padding-right: rem($gap-container-medium);
+        padding-left: rem($gap-container-medium);
+    }
+}

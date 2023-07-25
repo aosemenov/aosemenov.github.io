@@ -1,0 +1,17 @@
+.is {
+    &-desktop {
+        display: none;
+
+        @media #{$screen-tablet} {
+            display: inline-block;
+        }
+    }
+
+    &-mobile {
+        display: inline-block;
+
+        @media #{$screen-tablet} {
+            display: none;
+        }
+    }
+}

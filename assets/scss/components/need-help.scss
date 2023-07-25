@@ -1,0 +1,74 @@
+.need-help {
+    display: flex;
+    align-items: center;
+
+    &__text {
+        margin-right: rem($gap-tiny);
+
+        @media #{$screen-tablet} {
+            margin-right: rem($gap-normal);
+        }
+    }
+
+    &__icon {
+        $size-d: 27px;
+        $size-m: 19px;
+
+        display: block;
+
+        width: rem($size-m);
+        height: rem($size-m);
+
+        color: $white;
+
+        @media #{$screen-tablet} {
+            width: rem($size-d);
+            height: rem($size-d);
+        }
+    }
+
+    &__button {
+        $size-d: 62px;
+        $size-m: 45px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: rem($size-m);
+        height: rem($size-m);
+
+        cursor: pointer;
+        outline: none;
+
+        background: linear-gradient(180deg, #744CED 18.75%, #B650E6 88.02%);
+        border: none;
+        border-radius: 50%;
+
+        @media #{$screen-tablet} {
+            width: rem($size-d);
+            height: rem($size-d);
+        }
+
+        &-outer {
+            $size-d: 70px;
+            $size-m: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: rem($size-m);
+            height: rem($size-m);
+
+            background: $white;
+            border-radius: 50%;
+            box-shadow: $box-shadow-colored;
+
+            @media #{$screen-tablet} {
+                width: rem($size-d);
+                height: rem($size-d);
+            }
+        }
+    }
+}

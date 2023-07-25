@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Ошибка</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+<div class="page">
+    <div class="page__content content content--divided">
+        <div class="content__container container">
+            <div class="content__main">
+                <section class="auth-layout">
+                    <header class="auth-layout__header">
+                        <div class="auth-layout__wrapper">
+                            <nav class="auth-layout__header-nav">
+                                <a href="/" class="auth-layout__header-nav-link link link--small link--with-icon">
+                                    <svg class="link__icon icon">
+                                        <use xlink:href="/images/icons/sprite.svg#icon-arrow-left"></use>
+                                    </svg>
+                                    <span class="link__text">
+                                                Назад
+                                            </span>
+                                </a>
+                            </nav>
+                        </div>
+                    </header>
+                    <div class="auth-layout__content auth-form">
+                        <div class="auth-layout__wrapper">
+                            <div class="auth-form__logo logo">
+                                <svg class="logo__icon icon">
+                                    <use xlink:href="/images/icons/sprite.svg#icon-pay2me-logo"></use>
+                                </svg>
+                            </div>
+                            <div class="auth-form__description">
+                                <h2 class="auth-form__description-title">Что-то пошло не так</h2>
+                                <p class="auth-form__description-message">Вы ввели неверный логин или пароль.</p>
+                            </div>
+                            <form class="auth-form__form form" action="smth" method="post">
+                                <div class="form__row">
+                                    <div class="form__col form__col--medium">
+                                        <div class="form__field">
+                                            <div class="form__field-block form__field-block--input">
+                                                <div class="input input--clearable">
+                                                    <input type="text" class="input__control input__control--error" value="vadim111@mail.ru" name="login" placeholder="Введите номер телефона или электронную почту">
+                                                    <button type="button" class="input__clear" data-input-clear>
+                                                        <svg class="input__clear-icon icon">
+                                                            <use xlink:href="/images/icons/sprite.svg#icon-cross"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <span class="input__control-error">Возможно, электронная почта введена некорректно. Попробуйте ещё раз.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <div class="form__col form__col--medium">
+                                        <div class="form__field">
+                                            <div class="form__field-block form__field-block--input">
+                                                <div class="input input--clearable">
+                                                    <input type="text" class="input__control input__control--error" value="mynewpassword123" name="password" placeholder="Введите пароль">
+                                                    <button type="button" class="input__clear" data-input-clear>
+                                                        <svg class="input__clear-icon icon">
+                                                            <use xlink:href="/images/icons/sprite.svg#icon-cross"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <button type="button" class="form__field-eye eye-toggle" data-eye-toggle-open>
+                                                    <svg class="eye-toggle__icon eye-toggle__icon--open icon">
+                                                        <use xlink:href="/images/icons/sprite.svg#icon-eye"></use>
+                                                    </svg>
+                                                    <svg class="eye-toggle__icon eye-toggle__icon--close icon">
+                                                        <use xlink:href="/images/icons/sprite.svg#icon-eye-closed"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <span class="input__control-error">Возможно, пароль введён некорректно. Попробуйте ещё раз.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row form__row--default">
+                                    <button type="submit" class="form__row-button form__row-button--full button" disabled>
+                                        <span class="button__text">Далее</span>
+                                        <svg class="button__icon button__icon--right icon">
+                                            <use xlink:href="/images/icons/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                            <ul class="auth-form__actions">
+                                <li class="auth-form__action">
+                                    <p class="auth-form__action-label">
+                                        <span class="is-desktop">Возникли проблемы со входом?</span>
+                                        <span class="is-mobile">Проблемы со входом?</span>
+                                    </p>
+                                    <a href="#" class="auth-form__action-link link">
+                                        Восстановить доступ
+                                    </a>
+                                </li>
+                                <li class="auth-form__action">
+                                    <p class="auth-form__action-label">
+                                        <span class="is-desktop">У вас ещё нет аккаунта?</span>
+                                        <span class="is-mobile">Ещё нет аккаунта?</span>
+                                    </p>
+                                    <a href="#" class="auth-form__action-link link">
+                                        Зарегистрироваться
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <footer class="auth-layout__footer footer">
+                        <div class="footer__inner">
+                            <div class="footer__need-help need-help">
+                                <a href="#" class="need-help__text link link--small">
+                                    <span class="link__text">Нужна помощь?</span>
+                                </a>
+                                <div class="need-help__button-outer">
+                                    <button type="button" class="need-help__button">
+                                        <svg class="need-help__icon icon">
+                                            <use xlink:href="/images/icons/sprite.svg#icon-chat"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="footer__wrapper">
+                                <div class="footer__content">
+                                    <p class="footer__copyright">© PAY2ME 2023</p>
+                                    <p class="footer__text">ООО «Куарми» ИНН 7743364603</p>
+                                    <p class="footer__text">Юридический адрес 125445, Г. Москва, Ул. Беломорская, Д. 11, К. 1/290</p>
+                                </div>
+                                <div class="footer__bottom">
+                                    <ul class="footer__links">
+                                        <li class="footer__links-item">
+                                            <a href="#" class="footer__link link link--small">
+                                                    <span class="link__text">
+                                                        Политика конфиденциальности
+                                                    </span>
+                                            </a>
+                                        </li>
+                                        <li class="footer__links-item">
+                                            <a href="#" class="footer__link link link--small">
+                                                    <span class="link__text">
+                                                        Пользовательское соглашение
+                                                    </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="footer__switcher tooltip" data-lang-root>
+                                        <button type="button" class="tooltip__trigger lang-preview" data-lang-trigger>
+                                            <svg class="lang-preview__icon icon">
+                                                <use xlink:href="/images/icons/sprite.svg#icon-ru"></use>
+                                            </svg>
+                                            <span class="lang-preview__text">Ru</span>
+                                        </button>
+                                        <div class="tooltip__content" style="display: none">
+                                            <div class="lang-list" data-lang-list>
+                                                <button type="button" class="lang-list__option lang-list__option--active" data-lang-item>
+                                                            <span class="lang-list__option-preview lang-preview">
+                                                                <svg class="lang-preview__icon icon">
+                                                                    <use xlink:href="/images/icons/sprite.svg#icon-ru"></use>
+                                                                </svg>
+                                                                <span class="lang-preview__text lang-preview__text--uppercase">Ru</span>
+                                                            </span>
+                                                    <span class="lang-list__option-text">Русский</span>
+                                                </button>
+                                                <button type="button" class="lang-list__option" data-lang-item>
+                                                            <span class="lang-list__option-preview lang-preview">
+                                                                <svg class="lang-preview__icon icon">
+                                                                    <use xlink:href="/images/icons/sprite.svg#icon-usa"></use>
+                                                                </svg>
+                                                                <span class="lang-preview__text lang-preview__text--uppercase">En</span>
+                                                            </span>
+                                                    <span class="lang-list__option-text">Английский</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </section>
+            </div>
+            <div class="content__secondary">
+                <div class="banner">
+                    <div class="banner__inner">
+                        <img class="banner__image" src="/images/background-1.png" alt="background">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/script.js"></script>
+</body>
+</html>

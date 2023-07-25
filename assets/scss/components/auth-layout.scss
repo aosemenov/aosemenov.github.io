@@ -1,0 +1,45 @@
+.auth-layout {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+    padding-top: rem(45px);
+
+    background: $white;
+
+    @media #{$screen-tablet} {
+        padding-top: rem(78px);
+        padding-right: rem(36px);
+    }
+
+    &__header {
+        margin-bottom: rem(66px);
+
+        @media #{$screen-tablet} {
+            margin-bottom: rem(149px);
+        }
+    }
+
+    &__content {
+        flex-grow: 1;
+
+        max-width: rem(610px);
+    }
+
+    &__footer {
+        flex-shrink: 0;
+
+        margin-bottom: rem(32px);
+
+        @media #{$screen-tablet} {
+            margin-bottom: rem(30px);
+        }
+    }
+
+    &__wrapper {
+        max-width: rem(610px);
+    }
+}

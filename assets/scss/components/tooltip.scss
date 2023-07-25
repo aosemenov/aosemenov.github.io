@@ -1,0 +1,31 @@
+.tooltip {
+    position: relative;
+    z-index: $z-index-tooltip;
+
+    &__content {
+        position: absolute;
+        overflow: hidden;
+        bottom: calc(100% + 10px);
+        right: 0;
+
+        min-width: rem(197px);
+
+        cursor: pointer;
+
+        border-radius: rem($border-radius-default);
+        box-shadow: $box-shadow-default;
+
+        @media #{$screen-tablet} {
+            right: auto;
+            left: 0;
+        }
+    }
+
+    &__trigger {
+        outline: none;
+        cursor: pointer;
+
+        border: none;
+        background: transparent;
+    }
+}

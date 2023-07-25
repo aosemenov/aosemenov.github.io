@@ -1,0 +1,92 @@
+.input {
+    $height-input: 48px;
+
+    position: relative;
+
+    margin-right: rem(32px);
+
+    &--full {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    &--clearable & {
+        &__control {
+            padding-right: rem($gap-large);
+        }
+    }
+
+    &__control {
+        @include text-ellipsis;
+        @include txt-4();
+
+        display: block;
+
+        width: 100%;
+        height: rem($height-input);
+        padding: 0 rem($gap-medium);
+
+        color: $codGray;
+        border: rem(1px) solid $border-color;
+        border-radius: rem($border-radius-medium);
+        background-color: $white;
+        box-shadow: none;
+
+        &--error {
+            border-color: $warning;
+
+            &:focus {
+                border-color: $warning;
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: $amethystSmoke;
+        }
+
+        &-error {
+            @include help-text();
+
+            display: block;
+
+            margin-top: rem($gap-tiny);
+            padding-right: rem(32px);
+
+            color: $warning;
+
+            @media #{$screen-tablet} {
+                margin-top: rem(6px);
+            }
+        }
+    }
+
+    &__clear {
+        position: absolute;
+        top: 50%;
+        right: rem($gap-medium);
+
+        display: flex;
+
+        padding: 0;
+
+        transform: translateY(-50%);
+        cursor: pointer;
+        outline: none;
+
+        background: transparent;
+        border: none;
+
+        &-icon {
+            $size: 24px;
+
+            width: rem($size);
+            height: rem($size);
+
+            color: $eastBay;
+        }
+    }
+}

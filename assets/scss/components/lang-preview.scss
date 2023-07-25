@@ -1,0 +1,30 @@
+.lang-preview {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 0 rem(2px);
+
+    &__icon {
+        overflow: hidden;
+
+        width: rem(27px);
+        height: rem(20px);
+
+        margin-right: rem(6px);
+
+        border: rem(1px) solid $blueChalk;
+        border-radius: rem(6px);
+    }
+
+    &__text {
+        @include btn-s();
+
+        padding-right: rem($gap-tiny);
+
+        color: $color-text;
+
+        &--uppercase {
+            text-transform: uppercase;
+        }
+    }
+}

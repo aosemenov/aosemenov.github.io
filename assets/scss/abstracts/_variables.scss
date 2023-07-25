@@ -1,13 +1,25 @@
 
 // Colors
+$codGray: #1F1D1C;
+$eastBay: #4A3C73;
+$royalBlue: #744CED;
+$moonRaker: #E6E7FA;
+$amethystSmoke: #A197BD;
+$selago: #F8F8FE;
+$blueChalk: #F1ECFF;
+$aquaHaze: #F6F9FA;
+$mischka: #CDCADC;
+$alizarinCrimson: #DA1D20;
 
-/*
-    Название переменной конкретного цвета генерируется через сервис: http://chir.ag/projects/name-that-color/.
-    Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
-*/
+$white: #FFFFFF;
+$black: #000000;
+
+$primary: $royalBlue;
+$warning: $alizarinCrimson;
+$color-text: $eastBay;
+$border-color: $blueChalk;
 
 // Fonts
-
 $font-family-default: "Open Sans", sans-serif;
 
 $font-family: $font-family-default;
@@ -34,20 +46,36 @@ $line-height-medium: 24px;
 $line-height-normal: 21px;
 $line-height-small: 18px;
 $line-height-mini: 16px;
-$line-height-tiny: 13px;
+$line-height-tiny: 14px;
+
+$line-height-btn-s: 19px;
+$line-height-btn-l: 24.5px;
+$line-height-btn-m: 21.8px;
 
 // Breakpoints
 $screen-tablet: "(min-width: 768px)";
 
 // Gaps
+$gap-large: 50px;
+$gap-medium: 20px;
+$gap-normal: 16px;
+$gap-small: 10px;
+$gap-tiny: 8px;
 
 // Sizes
+$width-container: 1280px;
+
+$gap-container: $gap-normal;
+$gap-container-medium: $gap-medium;
 
 // Z-indexes
+$z-index-html: 1;
+$z-index-tooltip: 5;
 
 // Transitions and Animations
-
-// border
+$transition-duration: 300ms;
+$transition-duration-fast: 100ms;
+$transition-function: ease-in-out;
 
 // Radius
 $border-radius-large: 100px;

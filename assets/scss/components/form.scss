@@ -1,0 +1,121 @@
+.form {
+    $font-size-form-elements: $font-size-normal;
+    $horizontal-gutter: 20px;
+    $horizontal-gutter-big: 30px;
+    $vertical-gutter: 20px;
+    $vertical-gutter-big: 30px;
+
+    width: 100%;
+
+    &__row {
+        @include resetting-vertical-indentation-of-first;
+
+        display: flex;
+
+        margin-top: rem($vertical-gutter);
+
+        @media #{$screen-tablet} {
+            margin-top: rem($vertical-gutter-big);
+        }
+
+        &--mix {
+            flex-direction: column;
+
+            width: 100%;
+
+            @media #{$screen-tablet} {
+                flex-direction: row;
+            }
+        }
+
+        &-button {
+            width: 100%;
+            max-width: rem(380px);
+
+            &--fit {
+                margin-top: rem($gap-medium);
+
+                @media #{$screen-tablet} {
+                    width: auto;
+
+                    margin: 0;
+                    margin-left: rem($gap-medium);
+                }
+            }
+
+            &--full {
+
+                @media #{$screen-tablet} {
+                    width: rem(302px);
+                }
+            }
+        }
+    }
+
+    &__col {
+        $width: 100%;
+
+        width: $width;
+        max-width: rem(380px);
+
+        &--medium {
+            @media #{$screen-tablet} {
+                max-width: rem(334px);
+            }
+        }
+
+        &--default {
+            @media #{$screen-tablet} {
+                max-width: rem(302px);
+            }
+        }
+    }
+
+    &__field {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+
+        &-block {
+            &--input {
+                position: relative;
+            }
+        }
+
+        &-button {
+            margin-left: rem($gap-medium);
+        }
+
+        &-eye {
+            position: absolute;
+            top: 50%;
+            right: 0;
+
+            transform: translateY(-50%);
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+
+        @media #{$screen-tablet} {
+            flex-direction: row;
+        }
+
+        &-button {
+            @include resetting-vertical-indentation-of-last;
+
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: rem($gap-normal);
+
+            @media #{$screen-tablet} {
+                margin: 0;
+                margin-right: rem($gap-normal);
+                max-width: rem(180px);
+            }
+        }
+    }
+}
