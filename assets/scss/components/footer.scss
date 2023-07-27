@@ -41,7 +41,9 @@
     &__text {
         @include txt-6();
 
-        color: $amethystSmoke;
+        text-decoration: none !important;
+
+        color: $amethystSmoke !important;
     }
 
     &__need-help {
